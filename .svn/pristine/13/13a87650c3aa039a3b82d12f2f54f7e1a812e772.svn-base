@@ -1,0 +1,52 @@
+package cn.controller;
+
+import cn.domain.Product;
+import cn.service.IProductService;
+import com.github.pagehelper.PageInfo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
+
+@Controller
+@RequestMapping("/product")
+public class ProductController {
+    String sun="";
+    @Autowired
+    private IProductService productService;
+
+    //查询全部方法
+    @RequestMapping("/findAll.do")
+    public ModelAndView findAll(@RequestParam(name="page",required = true,defaultValue = "1")Integer page,
+                                @RequestParam(name="pageSize",required = true,defaultValue = "10")Integer pageSize) throws Exception {
+        ModelAndView mv=new ModelAndView();
+        List<Product> products=productService.findAll(page,pageSize);
+        PageInfo pageInfo=new PageInfo(products);
+        mv.addObject("pageInfo",pageInfo);
+//        mv.addObject("productList",products);
+        mv.setViewName("product-list");
+        return mv;
+    }
+
+    //产品添加
+    @RequestMapping("/save.do")
+    @Secured({"ROLE_ADMIN","ROLE_USER"})//设置访问权限
+    public String save(Product product) throws Exception {
+        productService.save(product);
+        return "redirect:findAll.do";
+    }
+
+    //产品详情
+    @RequestMapping("/findById.do")
+    public ModelAndView findById(@RequestParam(name="id",required =true)String orderId) throws Exception {
+        ModelAndView mv=new ModelAndView();
+//        Product product=productService.findById(orderId);
+//        mv.setViewName("/product-show");
+//        mv.addObject("orders",product);
+        return mv;
+    }
+}

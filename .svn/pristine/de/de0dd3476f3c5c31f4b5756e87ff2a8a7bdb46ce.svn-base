@@ -1,0 +1,7 @@
+package cn.controller;
+
+/**
+ * 账户web
+ */
+public class AccountController {
+}

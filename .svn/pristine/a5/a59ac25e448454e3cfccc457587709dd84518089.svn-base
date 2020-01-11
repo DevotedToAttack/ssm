@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ssm:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ecc56e3-e2e6-48db-afee-48552db56cba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/403.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/orders-alter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/product-alter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/product-orders.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/product-show.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/controller/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/controller/PermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/controller/SysLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/controller/SysLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/IOrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/IOrdersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/IPermissionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/IPermissionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/IProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/IProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/IRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/IRoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/ISysLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/ISysLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/domain/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/domain/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/IOrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/IOrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/IPermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/IPermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/IRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/IRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/ISysLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/ISysLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/impl/OrdersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/impl/OrdersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/impl/SysLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/impl/SysLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/test/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/test/TestSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/orders-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/orders-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/permission-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/permission-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/product-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/product-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/role-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/role-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/syslog-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/syslog-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/user-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/user-list.jsp" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Jsp File" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TKiBpmeUJKkbjU1htLogrFseMb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm2" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java\ssm\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.controller" />
+      <recent name="cn.utils" />
+      <recent name="cn.service" />
+      <recent name="cn.service.impl" />
+      <recent name="cn.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\ssm\src\main\webapp\pages" />
+      <recent name="E:\java\ssm\src\main\webapp" />
+      <recent name="E:\java\ssm\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.26">
+    <configuration name="TestSpring.testProductAlter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.test.TestSpring" />
+      <option name="METHOD_NAME" value="testProductAlter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpring.testProductfindByIdOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.test.TestSpring" />
+      <option name="METHOD_NAME" value="testProductfindByIdOrders" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpring.testSysLogfindString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.test.TestSpring" />
+      <option name="METHOD_NAME" value="testSysLogfindString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpring.testfindAllByPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.test.TestSpring" />
+      <option name="METHOD_NAME" value="testfindAllByPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpring.testsysLogServiceSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.test.TestSpring" />
+      <option name="METHOD_NAME" value="testsysLogServiceSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.26" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9090/ssm_war/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="ssm:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ssm_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ssm_2" />
+        <option name="HTTP_PORT" value="9090" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53924" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ssm:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestSpring.testsysLogServiceSave" />
+      <item itemvalue="JUnit.TestSpring.testfindAllByPage" />
+      <item itemvalue="JUnit.TestSpring.testSysLogfindString" />
+      <item itemvalue="JUnit.TestSpring.testProductAlter" />
+      <item itemvalue="JUnit.TestSpring.testProductfindByIdOrders" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.26" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestSpring.testProductfindByIdOrders" />
+        <item itemvalue="JUnit.TestSpring.testSysLogfindString" />
+        <item itemvalue="JUnit.TestSpring.testProductAlter" />
+        <item itemvalue="JUnit.TestSpring.testsysLogServiceSave" />
+        <item itemvalue="JUnit.TestSpring.testfindAllByPage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\吴旭彬\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\java\ssm" />
+          <option name="myCopyRoot" value="E:\java\ssm" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\java\ssm" />
+          <option name="myCopyRoot" value="E:\java\ssm" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ecc56e3-e2e6-48db-afee-48552db56cba" name="Default Changelist" comment="" />
+      <created>1573215054093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573215054093</updated>
+      <workItem from="1573215056755" duration="5996000" />
+      <workItem from="1573486902206" duration="46336000" />
+      <workItem from="1574007080607" duration="19062000" />
+      <workItem from="1574304710074" duration="15588000" />
+      <workItem from="1574477319827" duration="66588000" />
+      <workItem from="1574817203581" duration="11035000" />
+      <workItem from="1574951835961" duration="38000" />
+      <workItem from="1575017808842" duration="22030000" />
+      <workItem from="1575265247811" duration="32787000" />
+      <workItem from="1575464946923" duration="10852000" />
+      <workItem from="1575517218130" duration="70233000" />
+      <workItem from="1576027330248" duration="1830000" />
+      <workItem from="1576037189389" duration="21846000" />
+    </task>
+    <task id="LOCAL-00001" summary="demo1">
+      <created>1573489838514</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573489838514</updated>
+    </task>
+    <task id="LOCAL-00002" summary="demo1">
+      <created>1573557966599</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573557966599</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Enterprise_permissions1.1(2019.11.27)">
+      <created>1574829496536</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574829496536</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Enterprise_permissions1.2(2019.12.3)">
+      <created>1575357927237</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575357927237</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="demo1" />
+    <MESSAGE value="Enterprise_permissions1.0" />
+    <MESSAGE value="Enterprise_permissions1.1(2019.11.27)" />
+    <MESSAGE value="Enterprise_permissions1.2(2019.12.3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enterprise_permissions1.2(2019.12.3)" />
+  </component>
+</project>

@@ -1,0 +1,44 @@
+package cn.service.impl;
+
+import cn.dao.IRoleDao;
+import cn.domain.Permission;
+import cn.domain.Role;
+import cn.service.IRoleService;
+import com.github.pagehelper.PageHelper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service("roleService")
+public class RoleServiceImpl implements IRoleService {
+    @Autowired
+    private IRoleDao roleDao;
+
+    public List<Role> findAll(Integer page,Integer pageSize) throws Exception {
+        PageHelper.startPage(page,pageSize);
+        return roleDao.findAll();
+    }
+
+    @Override
+    public void save(Role role) {
+        roleDao.save(role);
+    }
+
+    @Override
+    public List<Permission> findOtherPermission(String roleId) {
+        return roleDao.findOtherPermission(roleId);
+    }
+
+    @Override
+    public void addPermissionToRole(String roleId, String[] permissionIds) {
+        for (String permissionId:permissionIds){
+            roleDao.addPermissionToRole(roleId,permissionId);
+        }
+    }
+
+    @Override
+    public Role findById(String roleId)throws Exception{
+        return roleDao.findById(roleId);
+    }
+}

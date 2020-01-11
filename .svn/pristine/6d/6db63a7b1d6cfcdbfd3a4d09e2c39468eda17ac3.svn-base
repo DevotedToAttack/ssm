@@ -1,0 +1,47 @@
+package cn.controller;
+
+import cn.domain.Permission;
+import cn.domain.Role;
+import cn.service.IPermissionService;
+import com.github.pagehelper.PageInfo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
+
+@Controller("permissController")
+@RequestMapping("/permission")
+public class PermissionController {
+    @Autowired
+    private IPermissionService permissionService;
+
+    @RequestMapping("/findAll.do")
+    public ModelAndView findAll(@RequestParam(name="page",required = true,defaultValue = "1")Integer page,
+                                 @RequestParam(name="pageSize",required = true,defaultValue = "10")Integer pageSize) throws Exception {
+        ModelAndView mv=new ModelAndView();
+        List<Permission> permissions=permissionService.findAll(page,pageSize);
+        //PageInfo就是一个分页bean
+        PageInfo pageInfo=new PageInfo(permissions);
+        mv.addObject("pageInfo",pageInfo);
+//        mv.addObject("permissionList",permissions);
+        mv.setViewName("permission-list");
+        return mv;
+    }
+
+    @RequestMapping("/save")
+    public String save(Permission permission) throws Exception {
+        permissionService.save(permission);
+        return "redirect:findAll.do";
+    }
+    @RequestMapping("/findById")
+    public ModelAndView findById(@RequestParam(name = "id",required = true) String permissionId) throws Exception{
+        ModelAndView mv=new ModelAndView();
+        Permission permission=permissionService.findById(permissionId);
+        mv.addObject("permission",permission);
+        mv.setViewName("permission-show");
+        return mv;
+    }
+}

@@ -1,0 +1,32 @@
+package cn.service.impl;
+
+import cn.dao.IOrdersDao;
+import cn.domain.Orders;
+import cn.service.IOrdersService;
+import com.github.pagehelper.PageHelper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+
+@Service("ordersService")
+@Transactional//添加事务
+public class OrdersServiceImpl implements IOrdersService {
+    @Autowired
+    private IOrdersDao ordersDao;
+
+    public List<Orders> findAll(Integer page,Integer pageSize) throws Exception {
+        PageHelper.startPage(page,pageSize);
+        return ordersDao.findAll();
+    }
+
+    public List<Orders> findAllByPage(Integer page,Integer pageSize) throws Exception {
+        return ordersDao.findAllByPage(page,pageSize);
+    }
+
+    public Orders findById(String ordersId) throws Exception {
+        return ordersDao.findById(ordersId);
+    }
+}

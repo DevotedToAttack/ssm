@@ -1,0 +1,27 @@
+package cn.service.impl;
+
+import cn.dao.IProductDao;
+import cn.domain.Product;
+import cn.service.IProductService;
+import com.github.pagehelper.PageHelper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+@Service("productService")
+@Transactional//添加事务
+public class ProductServiceImpl implements IProductService {
+    @Autowired
+    private IProductDao productDao;
+
+    public void save(Product product) throws Exception {
+        productDao.save(product);
+    }
+
+    public List<Product> findAll(Integer page,Integer pageSize) throws Exception {
+        PageHelper.startPage(page,pageSize);
+        return productDao.findAll();
+    }
+}

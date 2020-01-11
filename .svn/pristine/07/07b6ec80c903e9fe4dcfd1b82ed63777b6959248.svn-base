@@ -1,0 +1,16 @@
+package cn.service;
+
+import cn.domain.Permission;
+
+import java.util.List;
+
+public interface IPermissionService {
+
+    List<Permission> findAll(Integer page,Integer pageSize) throws Exception;
+
+    void save(Permission permission) throws Exception;
+
+    Permission findById(String permissionId) throws Exception;
+
+    List<Permission> findString(Integer page, Integer pageSize, String findString) throws Exception;
+}

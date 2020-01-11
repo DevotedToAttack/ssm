@@ -1,0 +1,97 @@
+package cn.test;
+
+import cn.dao.IUserDao;
+import cn.domain.Orders;
+import cn.domain.UserInfo;
+import cn.service.IOrdersService;
+import cn.service.IRoleService;
+import cn.service.IUserService;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import java.util.List;
+
+public class TestSpring {
+
+    private ApplicationContext ac;
+    private static BCryptPasswordEncoder bCryptPasswordEncoder=new BCryptPasswordEncoder();
+
+    @Before
+    public void init(){
+        ac=new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+    }
+    @After
+    public void closesql(){
+    }
+
+    @Test
+    public  void  testfindAllByPage() throws Exception {
+        //加载配置文件
+        //获取对象
+        IOrdersService as= (IOrdersService) ac.getBean("ordersService");
+        List<Orders> orders=as.findAll(0,4);
+        for (Orders order:orders) {
+            System.out.println(order);
+        }
+    }
+    @Test
+    public  void  testOrdersFindById() throws Exception {
+        //获取对象
+        IOrdersService as= (IOrdersService) ac.getBean("ordersService");
+        Orders orders=as.findById("0E7231DC797C486290E8713CA3C6ECCC");
+        System.out.println(orders);
+    }
+    @Test
+    public  void  testUserFindByName() throws Exception {
+        //获取对象
+        IUserService as= (IUserService) ac.getBean("userService");
+        UserInfo userInfo =as.findByUsername("admin");
+        System.out.println(userInfo);
+    }
+    @Test
+    public void testEncodePassword(){
+        String passowrd="user";
+        String pwd=bCryptPasswordEncoder.encode(passowrd);
+        System.out.println(pwd);
+    }
+    @Test
+    public  void  testUserfindAll() throws Exception {
+        //获取对象
+        IUserService as= (IUserService) ac.getBean("userService");
+        List<UserInfo> userInfos =as.findAll(1,4);
+        for (UserInfo userInfo:userInfos) {
+            System.out.println(userInfo);
+        }
+    }
+    @Test
+    public  void  testSaveUser() throws Exception {
+        UserInfo userInfo=new UserInfo();
+        //email,username,password,phoneNum,status
+        userInfo.setEmail("1658858452@qq.com");
+        userInfo.setUsername("123");
+        userInfo.setPassword("123");
+        userInfo.setPhoneNum("17302265262");
+        userInfo.setStatus(1);
+        //获取对象
+        IUserService as= (IUserService) ac.getBean("userService");
+        as.saveUser(userInfo);
+    }
+    @Test
+    public  void  testUserfindById() throws Exception {
+        //获取对象
+        IUserService as= (IUserService) ac.getBean("userService");
+        UserInfo userInfo =as.findById("1");
+        System.out.println(userInfo);
+    }
+    @Test
+    public  void  testAddPermissionToRole() throws Exception {
+        String[] permissionIds={"1","2"};
+        //获取对象
+        IRoleService as= (IRoleService) ac.getBean("roleService");
+        as.addPermissionToRole("8c3cc0fb-0f96-11ea-a745-b06ebf0d3dea",permissionIds);
+    }
+}

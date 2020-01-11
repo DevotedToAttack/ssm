@@ -1,0 +1,14 @@
+package cn.service;
+
+
+import cn.domain.Orders;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service("ordersService")
+public interface IOrdersService {
+    List<Orders> findAll(Integer page,Integer pageSize) throws Exception;
+    List<Orders> findAllByPage(Integer page,Integer pageSize) throws Exception;
+    Orders findById(String ordersId) throws Exception;
+}
